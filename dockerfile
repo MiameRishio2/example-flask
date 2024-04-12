@@ -21,6 +21,6 @@ ENV VIRTUAL_ENV=/app/venv
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 ENV FLASK_APP=app/app.py
  
-EXPOSE 8080
+EXPOSE 8000
  
-CMD ["gunicorn", "--bind" , ":8080", "--workers", "2", "app:app"]
+CMD ["gunicorn", "--bind" , ":8000", "--workers", "2", "app:app"]
