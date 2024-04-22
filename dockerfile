@@ -15,3 +15,4 @@ EXPOSE 8080
 
 # Set CMD to run Jenkins with desired arguments
 # CMD ["docker-wait", "--timeout", "300", "-t", "^jenkins$", "/usr/local/bin/jenkins.war"]
+CMD ["/usr/local/bin/jenkins.sh"]
