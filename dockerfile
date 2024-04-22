@@ -1,5 +1,3 @@
-FROM openjdk:17 AS jdk
-
 FROM jenkins/jenkins:jdk17 AS jenkins
 
 FROM jdk AS final
