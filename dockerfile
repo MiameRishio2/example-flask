@@ -14,4 +14,4 @@ COPY --from=builder /app/dist /opt/app  # Copy the built Python application
 COPY jenkins.war /usr/local/bin/jenkins.war  # Copy initial Jenkins configuration
 
 # Set CMD to run Jenkins with desired arguments
-CMD ["docker-wait", "--timeout", "300", "-t", "^jenkins$", "/usr/local/bin/jenkins.war"]
+# CMD ["docker-wait", "--timeout", "300", "-t", "^jenkins$", "/usr/local/bin/jenkins.war"]
